@@ -32,7 +32,7 @@ define :nginx_proxy, apache: false, redirect: false do
   end
 
   nginx_site params[:name] do
-    template false
+    template 'false'
   end
 
   if params[:aka]
